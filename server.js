@@ -7,17 +7,17 @@ const express = require('express');
 require('dotenv').config();
 let weatherData = require('./data/weather.json');
 
-// const cors = require('cors');
+const cors = require('cors');
 
 
 
 
 const app = express();
-// app.use(cors());
+app.use(cors());
 
 
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 
 app.get('/', (request, response) => {
