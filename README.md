@@ -8,7 +8,10 @@ In this lab assignment, you will begin building your own custom API server, whic
 
 # WRRC ( Web Request Resonse Cycle)
 
-![](img/wireframe.jpg)
+
+![](img/WRRC.png)
+
+
 
 # Time Est
 
@@ -21,3 +24,4 @@ Start time: 3:30 pm
 Finish time: 11:30 pm
 
 Actual time needed to complete: 8 hours
+
