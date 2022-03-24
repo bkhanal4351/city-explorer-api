@@ -1,20 +1,22 @@
 'use strict';
 
+
 console.log('My first server');
 
 
 const express = require('express');
 require('dotenv').config();
-let weatherData = require('./data/weather.json');
+// let weatherData = require('./data/weather.json');
 
 const cors = require('cors');
 
 
 
 
+
 const app = express();
 app.use(cors());
-
+const axios = require('axios');
 
 
 const PORT = process.env.PORT || 3002;
@@ -24,12 +26,18 @@ app.get('/', (request, response) => {
   response.send('Hello');
 });
 
-app.get('/weather', (request, response) => {
-  let city_name = request.query.city_name;
-  let dataToSend = weatherData.find(city => city.city_name.toLowerCase() === city_name.toLowerCase());
+app.get('/weather', async (request, response) => {
+  let city = request.query.city_name;
+  let url = `https://api.weatherbit.io/v2.0/current?city=${city}&key=${process.env.WEATHER_API}`;
+  let weatherResult = await axios.get(url);
+  console.log(url);
+  let forecastData = new Forecast(weatherResult.data);
 
-  let cityArr = dataToSend.data.map(cityData => new WeatherForecast(cityData));
-  response.send(cityArr);
+
+
+
+  response.send(forecastData);
+
 });
 
 
@@ -40,10 +48,10 @@ app.get('*', (request, response) => {
 
 
 
-class WeatherForecast {
+class Forecast {
   constructor(cityData) {
-    this.date = cityData.valid_date;
-    this.description = cityData.weather.description;
+    this.date = cityData.data[0].ob_time;
+    this.description = cityData.data[0].weather.description;
   }
 }
 

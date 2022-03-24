@@ -8,4 +8,4 @@ In this lab assignment, you will begin building your own custom API server, whic
 
 # WRRC ( Web Request Resonse Cycle)
 
-![](img/wireframe.jpg)
+![](img/WRRC.png)
