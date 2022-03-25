@@ -13,17 +13,46 @@ In this lab assignment, you will begin building your own custom API server, whic
 
 ![](img/wireframe.jpg)
 
+=======
 
 
-# Time Est
+
+![](img/Lab09.png.png)
+
+
+
+# Lab 6
+Name of feature: Asynchronous code, and APIs
+
+Estimate of time needed to complete: 3
+
+Start time: 2:30
+
+Finish time: 7:25
+
+Actual time needed to complete: 3:55
+
+# Lab 7
 
 Name of feature: Custom Servers with Node and Express
 
-Estimate of time needed to complete: 5 hours
+Estimate of time needed to complete: 3
 
-Start time: 3:30 pm
+Start time: 3:30
 
-Finish time: 11:30 pm
+Finish time: 10:30
+
+Actual time needed to complete: 7 hours
+
+# Lab 8
+
+Name of feature: Custom Servers with Node and Express
+
+Estimate of time needed to complete: 34
+
+Start time: 3:30
+
+Finish time: 11:30
 
 Actual time needed to complete: 8 hours
 
