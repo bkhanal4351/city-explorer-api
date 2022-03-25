@@ -11,6 +11,8 @@ In this lab assignment, you will begin building your own custom API server, whic
 
 ![](img/WRRC.png)
 
+![](img/wireframe.jpg)
+
 
 
 # Time Est
