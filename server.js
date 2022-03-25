@@ -17,7 +17,7 @@ const getForecast = require('./weather.js');
 
 const app = express();
 app.use(cors());
-const axios = require('axios');
+
 const getMovies = require('./movie.js');
 
 
@@ -42,7 +42,7 @@ app.get('/weather', getForecast);
 
 
 
-app.get('/movies', getMovies);
+app.get('/movie', getMovies);
 
 
 
