@@ -13,7 +13,7 @@ In this lab assignment, you will begin building your own custom API server, whic
 
 ![](img/wireframe.jpg)
 
-![](img/Lab09.png.png)
+![](img/Lab09.png)
 
 
 
