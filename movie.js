@@ -34,7 +34,7 @@ class Movie {
     this.overview = movieValue.overview;
     this.vote_average = movieValue.vote_average;
     this.vote_count = movieValue.vote_count;
-    // this.img= movieValue.poster_path;
+    this.poster_path= movieValue.poster_path;
     this.popularity = movieValue.popularity;
     this.release_date = movieValue.release_date;
   }
